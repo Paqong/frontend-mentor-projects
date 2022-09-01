@@ -27,18 +27,22 @@ body {
     font-size: 1.5rem;
     border-radius: 2rem;
     background-color: hsl(0, 0%, 100%);
+    color: hsl(220, 15%, 55%);
     gap: 2rem;
     padding: 2rem;
 }
 
 p,
 h1 {
+    margin-bottom: 2rem;
+    font-weight: 400;
     text-align: center;
 }
 
 h1 {
+    color: hsl(218, 44%, 22%);
+    font-weight: 700;
     font-size: 2.5rem;
-    margin-bottom: 2rem;
 }
 
 img,
