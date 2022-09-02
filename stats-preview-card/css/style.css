@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    height: 100%;
+    flex-direction: column;
+    background-color: hsl(233, 47%, 7%);
+    color: hsl(0, 0%, 100%);
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: hsl(244, 38%, 16%);
+    width: 80%;
+    max-width: 80%;
+    font-size: 1.8rem;
+}
+
+img {
+    max-width: 45%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texts {
+    flex-direction: column;
+    gap: 3rem;
+    width: 55%;
+    height: 100%;
+    padding: 7rem;
+}
+
+.texts h1 strong {
+    color: hsl(277, 64%, 61%);
+}
+
+.stats {
+    width: 100%;
+    gap: 5rem;
+    justify-content: flex-start;
+    margin-top: 4rem;
+}
+
+.stats span,
+.texts p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.stats span h2 {
+    color: hsla(0, 0%, 100%, 100%);
+}
+
+.attribution {
+    position: fixed;
+    bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.attribution a {
+    color: hsla(0, 0%, 100%, 100%);
+}
