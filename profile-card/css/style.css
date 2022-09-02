@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    height: 100%;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(/images/bg-pattern-top.svg),url(/images/bg-pattern-bottom.svg);
+    background-size: 800px auto, 800px auto;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left -200px top -400px, right -200px bottom -400px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.card {
+    position: relative;
+    min-width: 20%;
+    height: 55%;
+    background-color: #eee;
+    justify-content: unset;
+    border-radius: 1rem;
+}
+
+#profile-pic {
+    position: absolute;
+    top: 25%;
+    border: 5px solid #eee;
+    border-radius: 100%;
+}
+
+#cover-pic {
+    width: 35rem;
+    height: 40%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.user {
+    padding-top: 3rem;
+    height: 40%;
+    width: 100%;
+    font-size: 1.8rem;
+    gap: 0.5rem;
+}
+
+h2,
+strong {
+    color: hsl(229, 23%, 23%);
+}
+
+span {
+    color: hsl(227, 10%, 46%);
+}
+
+.stats {
+    border-top: 0.2rem solid hsl(0, 0%, 59%);
+    height: 20%;
+    width: 100%;
+    gap: 5rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.attribution {
+    position: fixed;
+    bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: hsl(229, 23%, 23%);
+}
+
+.attribution a {
+    color: hsla(0, 0%, 100%, 100%);
+}
