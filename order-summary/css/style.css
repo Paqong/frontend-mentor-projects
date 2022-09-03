@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    height: 100%;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.card {
+    max-height: 80%;
+    width: 35rem;
+    background-color: hsla(0, 0%, 100%, 100%);
+    justify-content: flex-start;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    text-align: center;
+    gap: 2.5rem;
+}
+
+.card > a {
+    text-decoration: none;
+    margin-bottom: 4rem;
+    font-weight: 700;
+}
+
+.hero-img{
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.plan,
+.description,
+button {
+    min-width: 80%;
+    border: 0;
+    border-radius: 1rem;
+}
+
+.description {
+    padding: 0 5rem 0 5rem;
+}
+
+.description > h1 {
+    margin-bottom: 1.5rem;
+}
+
+.plan {
+    background-color: hsl(225, 100%, 98%);
+    padding: 1.5rem;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    text-align: left;
+    gap: 2rem;
+}
+
+.plan > a {
+    justify-self: flex-end;
+    margin-left: auto;
+}
+
+button {
+    padding: 1.5rem 0 1.5rem 0;
+    font-weight: 700;
+    color: hsla(0, 0%, 100%, 100%);
+    background-color: hsl(245, 75%, 52%);
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.attribution {
+    position: fixed;
+    bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: hsl(229, 23%, 23%);
+}
+
+.attribution a {
+    color: hsl(245, 75%, 52%);
+}
