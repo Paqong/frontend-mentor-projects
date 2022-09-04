@@ -1,6 +1,8 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Space Grotesk';
+    font-weight: 500;
     box-sizing: border-box;
 }
 
@@ -10,8 +12,7 @@ html {
 }
 
 body {
-    max-height: 100%;
-    overflow: hidden;
+    height: 100%;
 }
 
 .flex {
@@ -28,7 +29,63 @@ body {
     flex-direction: column;
 }
 
-img {
-    width: 30%;
+.background {
+    width: 35%;
     height: 100%;
+    background-image: url(/images/bg-main-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    width: 65%;
+    height: 100%;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.form {
+    height: 50%;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+label {
+    margin-top: 1rem;
+}
+
+.double {
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+input {
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    width: 30rem;
+    height: 3.5rem;
+    padding: 0 1rem 0 1rem;
+    margin-top: 0.5rem;
+}
+
+.small-input {
+    width: 6rem;
+}
+
+#cvc {
+    width: 16.7rem;
+}
+
+button {
+    border: 0;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+    height: 3.5rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
