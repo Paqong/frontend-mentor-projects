@@ -151,7 +151,10 @@ button {
     padding-right: 5rem;
 }
 
-
+input:focus:invalid {
+    outline: 0;
+    border: 1px solid red;
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
