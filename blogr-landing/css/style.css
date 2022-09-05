@@ -42,6 +42,8 @@ a {
     border-bottom-left-radius: 10rem;
     width: 100%;
     min-height: 100vh;
+    align-items: center;
+    gap: 10rem;
 }
 
 .navbar {
@@ -67,8 +69,31 @@ a {
 
 .white-btn {
     border: 0;
-    padding: 1rem 3rem;
+    padding: 2rem 3.5rem;
     border-radius: 3rem;
     color: hsl(353, 100%, 62%);
     font-weight: 700;
+}
+
+.normal-btn {
+    border: 1px solid hsl(0, 0%, 100%);
+    padding: 2rem 3.5rem;
+    border-radius: 3rem;
+    background-color: hsl(353, 100%, 62%, 0);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;   
+}
+
+.head-title {
+    color: hsl(0, 0%, 100%);
+    font-size: 3rem;
+    gap: 2.5rem;
+}
+
+.head-title p {
+    font-size: 2rem;
+}
+
+.buttons {
+    gap: 3rem;
 }
