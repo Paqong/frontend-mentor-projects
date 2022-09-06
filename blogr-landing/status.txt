@@ -1,0 +1,5 @@
+I started this project mainly because I wanted to practice my HTML and CSS skills but,
+I'll probably stop doing this project for now.
+Bunch of uni stuff is going on for a while now and will probably last for long,
+and I want to move on from just learning HTML and CSS (and JavaScript although I still haven't used it anywhere haha) to
+Python because it is the topic we're currently dealing on in the uni
