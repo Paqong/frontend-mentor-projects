@@ -13,6 +13,10 @@ body {
     height: 100%;
 }
 
+section {
+    width: 100%;
+}
+
 a {
     color: hsl(0, 0%, 100%);
     text-decoration: none;
@@ -137,4 +141,73 @@ a {
 
 .quality p {
     color: hsl(208, 49%, 24%);
+}
+
+.second-section {
+    background-color: hsl(237, 17%, 21%);
+    border-top-right-radius: 10rem;
+    border-bottom-left-radius: 10rem;
+}
+
+.double-phone {
+    width: 100%;
+    max-width: 50rem;
+    height: auto;
+}
+
+.second-section-quality {
+    color: #eee;
+    width: 50%;
+    font-size: 2rem;
+    gap: 3rem;
+    padding: 0 8rem 0 8rem;
+}
+
+.second-section-quality h3 {
+    font-size: 4rem;
+}
+
+.third-section {
+    margin-top: 8rem;
+    width: 100%;
+}
+
+.laptop-pic {
+    width: 50%;
+    height: auto;
+    object-position: -12rem;
+}
+
+.third-qualities {
+    color: hsl(208, 49%, 24%);
+    gap: 5rem;
+    width: 50%;
+    padding-right: 3.5em;
+    font-size: 2rem;
+}
+
+.third-quality {
+    gap: 2.5rem;
+    width: 100%;
+}
+
+.footer {
+    border-top-right-radius: 10rem;
+    margin-top: 8rem;
+    padding: 5em;
+    width: 100%;
+    height: 40vh;
+    background-color: hsl(237, 23%, 32%);
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    color: #eee;
+    font-size: 1.5rem;
+}
+
+.footer-col {
+    gap: 0.5rem;
+}
+
+.col-title {
+    margin-bottom: 2rem;
 }
