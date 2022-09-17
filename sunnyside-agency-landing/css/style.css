@@ -5,19 +5,19 @@
 }
 
 :root {
+    /*Font Families*/
     --ff-barlow: 'Barlow';
     --ff-fraunces: 'Fraunces';
 
+    /*Font Weights*/
     --fw-600: 600;
     --fw-700: 700;
     --fw-900: 900;
 
-    /*Backgrounds*/
+    /*Colors*/
     --dark-desaturated-cyan: hsl(167, 40%, 24%);
     --dark-moderate-cyan: hsl(168, 34%, 41%);
     --dark-blue: hsl(198, 62%, 26%);
-
-    /*Fonts*/
     --very-dark-desaturated-blue: hsl(212, 27%, 19%);
     --very-dark-grayish-blue: hsl(213, 9%, 39%);
     --dark-grayish-blue: hsl(232, 10%, 55%);
@@ -30,8 +30,13 @@ html {
 
 body {
     font-size: 1.8rem;
+    font-weight: var(--fw-600);
     font-family: var(--ff-barlow);
-    color: hsl(0, 0%, 100%);
+    color: var(--dark-grayish-blue);
+}
+
+h2 {
+    font-family: var(--ff-fraunces);
 }
 
 li, a {
@@ -112,8 +117,9 @@ li, a {
     font-family: var(--ff-fraunces);
     text-align: center;
     margin-top: 1em;
-    margin-bottom: 4.5em;
+    margin-bottom: 3em;
     letter-spacing: 0.5em;
+    color: hsl(0, 0%, 100%);
 }
 
 .header-arrow {
@@ -121,13 +127,15 @@ li, a {
     margin-left: auto;
     margin-right: auto;
 }
+
+.header-arrow:hover {
+    cursor: pointer;
+}
 /*End of Welcome Screen*/
 
 /*Services Section*/
-
 .services-section {
-    gap: 0;
-    color: var(--very-dark-grayish-blue);
+    color: var(--dark-grayish-blue);
     grid-template-rows: repeat(3, 1fr);
 }
 
@@ -157,6 +165,31 @@ li, a {
 .service-desc {
     height: 100%;
     width: 100%;
+    gap: 3rem;
+    padding: 5em;
+}
+
+.service-desc h2 {
+    color: var(--very-dark-desaturated-blue);
+    font-size: 4rem;
+}
+
+.service-desc a {
+    color: var(--very-dark-desaturated-blue);
+    font-family: var(--ff-fraunces);
+    font-weight: var(--fw-900);
+    text-decoration: underline 0.3rem;
+    width: 12.5rem;
+}
+
+@media (max-width: 40em){
+    .services-section {
+        text-align: center;
+    }
+
+    .service-desc {
+        align-items: center;
+    }
 }
 
 .last-two-desc-div {
@@ -170,4 +203,117 @@ li, a {
     margin-bottom: 3em;
     padding: 0 5em 0 5em;
     min-height: 20%;
+}
+
+.graphic-design h2 {
+    margin-bottom: 1em;
+    color: var(--dark-desaturated-cyan);
+}
+
+.graphic-design p {
+    color: var(--dark-moderate-cyan);
+    font-weight: var(--fw-700);
+}
+
+.photography h2 {
+    margin-bottom: 1em;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.photography p {
+    color: var(--dark-blue);
+    font-weight: var(--fw-700);
+}
+/*End of Services section*/
+
+/*Testimonials*/
+.testimonials {
+    width: 100%;
+    min-height: 100vh;
+    padding: 2em;
+    gap: 5em;
+}
+
+@media (min-width: 53em){
+    .testimonials {
+        padding: 8em;
+    }
+}
+
+.testimonials-title {
+    font-family: var(--ff-fraunces);
+    letter-spacing: 0.5em;
+    text-align: center;
+}
+
+.clients-div {
+    text-align: center;
+    width: 100%;
+    gap: 8rem;
+}
+
+@media (min-width: 40em){
+    .clients-div {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.client {
+    gap: 3rem;
+    line-height: 3rem;
+}
+
+.client-photo {
+    border-radius: 100%;
+    width: 10rem;
+}
+
+.client-name {
+    font-family: var(--ff-fraunces);
+    color: var(--very-dark-desaturated-blue);
+}
+/*End of Testimonials section*/
+
+/*Projects*/
+.projects {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 53em){
+    .projects {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.project-photo {
+    width: 100%;
+    height: auto;
+}
+/*End of Projects section*/
+
+/*Footer/Contact*/
+.footer {
+    width: 100%;
+    min-height: 40vh;
+    background-color: rgb(134, 199, 185);
+    padding: 3em;
+    gap: 4rem;
+}
+
+.footer-links {
+    margin-bottom: 3em;
+}
+
+.footer-links a {
+    color: var(--dark-moderate-cyan);
+}
+
+.contacts {
+    gap: 3rem;
+}
+
+.contacts-icon:hover {
+    transition: 0.2s ease-in-out;
+    transform: translateY(0.5rem);
 }
