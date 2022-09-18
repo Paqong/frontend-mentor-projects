@@ -9,26 +9,39 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="/css/style.css">
 
-    <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <script defer src="/js/script.js"></script>
+    <title>Sunnyside Agency</title>
   </head>
   <body>
     <!-- WELCOME SCREEN -->
-    <header class="welcome-screen">
+    <header id="about" class="welcome-screen flex column align-center">
       <nav class="navbar flex align-center">
         <a href="#"><img class="logo" src="/images/logo.svg" alt="Logo"></a>
         <ul class="nav-links flex align-center">
-          <li><a href="#" class="nav-items">About</a></li>
-          <li><a href="#" class="nav-items">Services</a></li>
-          <li><a href="#" class="nav-items">Projects</a></li>
+          <li><a href="#about" class="nav-items">About</a></li>
+          <li><a href="#services" class="nav-items">Services</a></li>
+          <li><a href="#projects" class="nav-items">Projects</a></li>
+          <a href="#contacts"><button class="contact-btn">CONTACT</button></a>
+        </ul>
+        <a href="#" class="hamburger-icon">
+          <svg width="24" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z" 
+            fill="#FFF" fill-rule="evenodd"/></svg>
+        </a>
+      </nav>
+      <div class="topnav">
+        <ul class="nav-links flex column align-center">
+          <li><a href="#about" class="nav-items">About</a></li>
+          <li><a href="#services" class="nav-items">Services</a></li>
+          <li><a href="#projects" class="nav-items">Projects</a></li>
           <button class="contact-btn">CONTACT</button>
         </ul>
-      </nav>
+      </div>
       <h1 class="header-title">WE ARE CREATIVES</h1>
       <img class="header-arrow" src="/images/icon-arrow-down.svg" alt="Arrow down icon">
     </header>
 
     <!-- SERVICES -->
-    <section class="services-section grid">
+    <section id="services" class="services-section grid">
       <img class="service-photo egg-photo" src="/images/desktop//image-transform.jpg" alt="An Egg">
       <div class="service-desc transform-desc flex column justify-center">
         <h2>Transform your brand</h2>
@@ -104,7 +117,7 @@
     </section>
 
     <!-- PROJECTS -->
-    <section class="projects grid">
+    <section id="projects" class="projects grid">
       <img class="project-photo" src="/images/desktop/image-gallery-milkbottles.jpg" alt="Bottles of Milk">
       <img class="project-photo" src="/images/desktop/image-gallery-orange.jpg" alt="Photo of an Orange">
       <img class="project-photo" src="/images/desktop/image-gallery-cone.jpg" alt="Ice Cream Cone">
@@ -119,12 +132,12 @@
       </svg>
       <div>
         <ul class="footer-links nav-links flex align-center">
-          <li><a href="#" class="nav-items">About</a></li>
-          <li><a href="#" class="nav-items">Services</a></li>
-          <li><a href="#" class="nav-items">Projects</a></li>
+          <li><a href="#about" class="nav-items">About</a></li>
+          <li><a href="#services" class="nav-items">Services</a></li>
+          <li><a href="#projects" class="nav-items">Projects</a></li>
         </ul>
       </div>
-      <div>
+      <div id="contacts">
         <ul class="contacts nav-links flex align-center">
           <li><a href="#" class="nav-items">
             <svg class="contacts-icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z"
