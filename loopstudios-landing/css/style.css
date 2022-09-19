@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*Font Families*/
+    --ff-alata: 'Alata';
+    --ff-josefin: 'Josefin Sans';
+
+    /*Font Weights*/
+    --fw-300: 300;
+    --fw-400: 400;
+    
+    /*Colors*/
+    --fc-white: hsl(0, 0%, 100%);
+    --fc-black: hsl(0, 0%, 0%);
+    --fc-dark-gray: hsl(0, 0%, 55%);
+    --fc-very-dark-gray: hsl(0, 0%, 41%);
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--fc-white);
+    font-size: 1.5rem;
+    font-family: var(--ff-josefin);
+    font-weight: var(--fw-300);
+}
+
+li, a {
+    color: var(--fc-white);
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Start of Utility Classes*/
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid {
+    display: grid;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.column {
+    flex-direction: column;
+}
+/*End of Utility Classes*/
+
+/*Navbar*/
+.navbar {
+    width: 100%;
+}
+
+.nav-links {
+    align-self: flex-end;
+    margin-left: auto;
+    gap: 4rem;
+}
+/*End of Navbar*/
+
+/*Welcome Screen*/
+.welcome-screen {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4em 8em;
+}
+
+.welcome-msg {
+    width: 75rem;
+    border: 0.5rem solid var(--fc-white);
+    padding: 2em;
+    margin-top: 18rem;
+}
+
+.welcome-msg h1 {
+    font-size: 8rem;
+    font-weight: var(--fw-400);
+    color: var(--fc-white);
+}
+/*End of Welcome Screen*/
+
+/*Company Description*/
+.company-desc {
+    height: 100vh;
+    padding: 4em 8em;
+    position: relative;
+}
+
+.desc-photo {
+    width: 100%;
+    max-width: 70rem;
+    height: auto;
+    z-index: 0;
+}
+
+.desc-div {
+    width: 100%;
+    max-width: 80rem;
+    height: 50rem;
+    position: absolute;
+    bottom: 5rem;
+    right: 0;
+    background-color: var(--fc-white);
+    color: var(--fc-dark-gray);
+    padding: 8em;
+    z-index: 1;
+    gap: 3rem;
+}
+
+.desc-div h2 {
+    font-size: 5rem;
+    color: var(--fc-black);
+    font-family: var(--ff-josefin);
+}
+
+.desc-div p {
+    line-height: 2.5rem;
+}
+
