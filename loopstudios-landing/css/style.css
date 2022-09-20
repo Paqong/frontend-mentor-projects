@@ -134,4 +134,73 @@ li, a {
 .desc-div p {
     line-height: 2.5rem;
 }
+/*End of Comapny Description*/
+
+/*Products section*/
+.products-section {
+    padding: 0 8em;
+    width: 100%;
+    gap: 4em;
+}
+
+.see-all-btn {
+    height: 4rem;
+    padding: 0 3em;
+    background-color: var(--fc-white);
+    border: 0.3rem solid  var(--fc-black);
+    justify-self: center;
+    font-family: var(--ff-alata);
+    letter-spacing: 0.5rem;
+}
+
+.our-creations {
+    font-size: 4rem;
+    font-family: var(--ff-alata);
+    font-weight: var(--fw-400);
+    letter-spacing: 0.5rem;
+}
+
+.see-all-btn:hover {
+    cursor: pointer;
+}
+
+.products-div {
+    width: 100%;
+}
+
+@media (min-width: 50em) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .see-all-btn {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        justify-self: end;
+        align-self: end;
+    }
+
+    .products-div {
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+.product {
+    position: relative;
+}
+
+.product-title {
+    position: absolute;
+    font-size: 3rem;
+    left: 3rem;
+    bottom: 3rem;
+    z-index: 1;
+    color: var(--fc-white);
+    width: 20rem;
+}
+
 
