@@ -138,7 +138,7 @@ li, a {
 
 /*Products section*/
 .products-section {
-    padding: 0 8em;
+    padding: 0 8em 8em 8em;
     width: 100%;
     gap: 4em;
 }
@@ -166,6 +166,7 @@ li, a {
 
 .products-div {
     width: 100%;
+    gap: 1em;
 }
 
 @media (min-width: 50em) {
@@ -193,6 +194,10 @@ li, a {
     position: relative;
 }
 
+.product-photo {
+    width: 100%;
+}
+
 .product-title {
     position: absolute;
     font-size: 3rem;
@@ -203,4 +208,31 @@ li, a {
     width: 20rem;
 }
 
+/*Footer section*/
+.footer {
+    background-color: var(--fc-black);
+    gap: 4rem;
+    padding: 4em 8em;
+    justify-items: center;
+}
 
+.footer-nav,
+.socials {
+    gap: 4rem;
+}
+
+.credits {
+    color: var(--fc-white);
+}
+
+@media (min-width: 50em) {
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: unset;
+    }
+
+    .credits,
+    .socials {
+        justify-self: end;
+    }
+}
