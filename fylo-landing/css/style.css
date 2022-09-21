@@ -32,4 +32,101 @@ html {
 
 body {
     font-size: 1.4rem;
+    font-family: var(--ff-raleway);
+    background-color: var(--c-intro);
+    color: var(--c-white);
+}
+
+li, a {
+    color: var(--c-white);
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Start of Utility Classes*/
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-justify-center {
+    justify-items: center;
+}
+
+.grid-align-center {
+    align-items: center;
+}
+/*End of Utility Classes*/
+
+/*Navigation Bar*/
+.navbar {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2em;
+    position: sticky;
+    top: 0;
+}
+
+.nav-links {
+    justify-self: end;
+    gap: 4rem;
+}
+
+@media (min-width: 50em) {
+    .navbar {
+        padding: 4em 5em;
+        position: unset;
+    }
+}
+/*End of Navigation Bar section*/
+
+/*Introduction section*/
+.intro-section {
+    width: 100%;
+    text-align: center;
+    gap: 4rem;
+}
+
+.intro-photo {
+    width: 100%;
+    max-width: 72rem;
+    height: auto;
+}
+
+.intro-title {
+    width: 72rem;
+    font-size: 3rem;
+    font-family: var(--ff-open-sans);
+    font-weight: var(--fw-700);
+}
+
+.intro-desc {
+    width: 50rem;
+    margin-bottom: 3rem;
+}
+
+.intro-btn {
+    padding: 1em 4em;
+    border: 0;
+    font-weight: var(--fw-700);
+    font-family: var(--ff-open-sans);
+    color: var(--c-white);
+    background-color: var(--c-blue);
+    border-radius: 10rem;
 }
