@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*Font Families*/
+    --ff-raleway: 'Raleway';
+    --ff-open-sans: 'Open Sans';
+
+    /*Font Weights*/
+    --fw-400: 400;
+    --fw-700: 700;
+
+    /*Colors*/
+    --c-intro: hsl(217, 28%, 15%);
+    --c-main-bg: hsl(218, 28%, 13%);
+    --c-footer-bg: hsl(216, 53%, 9%);
+    --c-testimonials-bg: hsl(219, 30%, 18%);
+
+    --c-cyan: hsl(176, 68%, 64%);
+    --c-blue: hsl(198, 60%, 50%);
+    --c-light-red: hsl(0, 100%, 63%);
+    --c-white: hsl(0, 0%, 100%);
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.4rem;
+}
