@@ -32,7 +32,7 @@ html {
 
 body {
     font-size: 1.4rem;
-    font-family: var(--ff-raleway);
+    font-family: var(--ff-open-sans);
     background-color: var(--c-intro);
     color: var(--c-white);
 }
@@ -81,6 +81,7 @@ li, a {
     padding: 2em;
     position: sticky;
     top: 0;
+    background-color: var(--c-intro)
 }
 
 .nav-links {
@@ -112,7 +113,7 @@ li, a {
 .intro-title {
     width: 72rem;
     font-size: 3rem;
-    font-family: var(--ff-open-sans);
+    font-family: var(--ff-raleway);
     font-weight: var(--fw-700);
 }
 
@@ -130,3 +131,123 @@ li, a {
     background-color: var(--c-blue);
     border-radius: 10rem;
 }
+/*End of Introduction section*/
+
+/*Features*/
+.features {
+    margin-top: 10rem;
+    width: 100%;
+    gap: 10rem;
+    background-color: var(--c-main-bg);
+    padding: 10rem;
+}
+
+.features p {
+    width: 45rem;
+    line-height: 2.5rem;
+}
+
+.feature {
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.feature-title {
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    font-family: var(--ff-raleway);
+    font-weight: var(--fw-700);
+}
+
+@media (min-width: 50em){
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/*End of Features section*/
+
+/*How Fylo Works section*/
+.how-it-works {
+    width: 100%;
+    padding: 10rem;
+}
+
+.how-photo {
+    width: 100%;
+    height: auto;
+}
+
+.how-desc {
+    width: 50rem;
+    gap: 2rem;
+}
+
+.how-title {
+    width: 30rem;
+    font-size: 3rem;
+    font-family: var(--ff-raleway);
+    font-weight: var(--fw-700);
+}
+
+.how-link {
+    width: fit-content;
+    color: var(--c-cyan);
+    border-bottom: 0.3rem solid var(--c-cyan);
+}
+
+@media (min-width: 50em){
+    .how-it-works {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/*End of How it Works section*/
+
+/*Testimonials section*/
+.testimonials {
+    width: 100%;
+    gap: 3rem;
+    padding: 10rem;
+}
+
+.testimonial {
+    min-height: 25rem;
+    background-color: var(--c-testimonials-bg);
+    padding: 2em 2em;
+    gap: 3rem;
+}
+
+.testimonial > p {
+    font-size: 1.8rem;
+}
+
+.profile {
+    gap: 1.5rem;
+}
+
+.profile-photo {
+    border-radius: 100%;
+    width: 4rem;
+}
+
+.profile-info {
+    margin-top: auto;
+    justify-self: flex-end;
+}
+
+.profile-info p {
+    font-family: var(--ff-raleway);
+    font-weight: var(--fw-700);
+}
+
+.profile-info span {
+    font-size: 1rem;
+}
+
+@media (min-width: 50em){
+    .testimonials {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/*End of Testimonials section*/
+
+/*Early Access Form*/
