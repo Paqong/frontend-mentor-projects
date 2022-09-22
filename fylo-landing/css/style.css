@@ -128,7 +128,7 @@ li, a {
     font-weight: var(--fw-700);
     font-family: var(--ff-open-sans);
     color: var(--c-white);
-    background-color: var(--c-blue);
+    background: linear-gradient(to right, var(--c-cyan), var(--c-blue));
     border-radius: 10rem;
 }
 /*End of Introduction section*/
@@ -170,6 +170,7 @@ li, a {
 .how-it-works {
     width: 100%;
     padding: 10rem;
+    background-color: var(--c-main-bg);
 }
 
 .how-photo {
@@ -207,6 +208,10 @@ li, a {
     width: 100%;
     gap: 3rem;
     padding: 10rem;
+    background-color: var(--c-main-bg);
+    background-image: url(/images/bg-quotes.png);
+    background-position: 8em 4.5em;
+    background-repeat: no-repeat;
 }
 
 .testimonial {
@@ -251,3 +256,93 @@ li, a {
 /*End of Testimonials section*/
 
 /*Early Access Form*/
+.early-access {
+    width: 100%;
+    min-height: 50vh;
+    position: relative;
+    background: linear-gradient(to bottom, var(--c-main-bg) 50%, var(--c-footer-bg) 50%);
+}
+
+.card {
+    width: 90%;
+    background-color: var(--c-intro);
+    box-shadow: 0.5rem 0.5rem 0.5rem black;
+    text-align: center;
+    padding: 3em;
+    border-radius: 1rem;
+    gap: 3rem;
+}
+
+.card-title {
+    font-size: 3rem;
+    font-weight: var(--fw-700);
+    font-family: var(--ff-raleway);
+}
+
+.email-input,
+.email-btn {
+    width: 100%;
+    padding: 1em;
+    border-radius: 10rem;
+    border: 0;
+}
+
+.email-btn {
+    margin-top: 3rem;
+    font-weight: var(--fw-700);
+    font-family: var(--ff-open-sans);
+    color: var(--c-white);
+    background: linear-gradient(to right, var(--c-cyan), var(--c-blue));
+}
+
+@media (min-width: 50em) {
+    .card {
+        width: 60%;
+    }
+
+    .card-desc {
+        padding: 0 4em;
+    }
+
+    .email-input {
+        width: 60%;
+    }
+
+    .email-btn {
+        margin-top: unset;
+        width: unset;
+        margin-left: 3rem;
+    } 
+}
+/*End of Early Access Form section*/
+
+/*Footer*/
+.footer {
+    padding: 4em;
+    gap: 8rem;
+}
+
+.footer-icon-desc {
+    gap: 2rem;
+}
+
+.footer-icon-desc p,
+.footer a {
+    width: fit-content;
+}
+
+.footer-multiple {
+    gap: 3rem;
+}
+
+@media (min-width: 50em) {
+    .footer {
+        padding: 6em;
+        grid-template-columns: repeat(4, 1fr);
+    }    
+
+    .footer-logo {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+}
