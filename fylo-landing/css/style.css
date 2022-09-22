@@ -320,6 +320,7 @@ li, a {
 .footer {
     padding: 4em;
     gap: 8rem;
+    background-color: var(--c-footer-bg);
 }
 
 .footer-icon-desc {
