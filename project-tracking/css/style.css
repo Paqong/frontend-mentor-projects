@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*Font Families*/
+    --ff-barlow: 'Barlow';
+    --ff-barlow-condensed: 'Barlow Condensed';
+
+    /*Font Weights*/
+    --fw-400: 400;
+    --fw-700: 700;
+
+    /*Colors*/
+    --c-red: hsl(0, 100%, 68%);
+
+    --c-very-dark-blue: hsl(230, 29%, 20%);
+    --c-dark-grayish-blue: hsl(230, 11%, 40%);
+    --c-grayish-blue: hsl(231, 7%, 65%);
+    --c-light-grayish-blue: hsl(207, 33%, 95%);
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: var(--ff-barlow);
+    background-color: var(--c-light-grayish-blue);
+}
+
+li, a {
+    font-family: var(--ff-barlow-condensed);
+    font-weight: var(--fw-700);
+    color: var(--c-very-dark-blue);
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Start of Utility Classes*/
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-justify-center {
+    justify-items: center;
+}
+
+.grid-align-center {
+    align-items: center;
+}
+/*End of Utility Classes*/
+
+/*Navigation Bar*/
+.navbar {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2em;
+    position: sticky;
+    top: 0;
+}
+
+.nav-links {
+    justify-self: end;
+    gap: 4rem;
+}
+
+.nav-links hr {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 100%;
+    background-color: var(--c-grayish-blue);
+    border-color: var(--c-grayish-blue);
+}
+
+.login {
+    color: var(--c-grayish-blue);
+}
+
+@media (min-width: 50em){
+    .navbar {
+        padding: 3em 6em;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+/*End of Navigation Bar section*/
+
+/*Main Content*/
+
+.text-content {
+    gap: 2rem;
+    color: var(--c-grayish-blue);
+}
+
+.headings {
+    font-weight: var(--fw-700);
+    font-family: var(--ff-barlow-condensed);
+    letter-spacing: 0.5rem;
+}
+
+.new {
+    background-color: var(--c-very-dark-blue);
+    color: var(--c-light-grayish-blue);
+    padding: 0.5rem 1rem;
+    border-radius: 30rem;
+}
+
+.page-title {
+    font-size: 8rem;
+    font-family: var(--ff-barlow-condensed);
+    color: var(--c-very-dark-blue);
+    font-weight: var(--fw-700);
+}
+
+.desc {
+    width: 28rem;
+    margin-bottom: 5rem;
+    color: var(--c-dark-grayish-blue);
+    line-height: 2.5rem;
+}
+
+.demo-btn {
+    background-color: var(--c-red);
+    color: var(--c-light-grayish-blue);
+    font-weight: var(--fw-700);
+    border: 0;
+    border-radius: 0.5rem;
+    padding: 0.7em 2em;
+    margin-right: 3rem;
+}
+
+@media (min-width: 50em) {
+    .main {
+        overflow: hidden;
+        width: 100%;
+        grid-template-columns: repeat(2, 50%);
+        padding: 0 6em;
+    }
+}
