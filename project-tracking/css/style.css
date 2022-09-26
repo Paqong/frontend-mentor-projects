@@ -77,30 +77,78 @@ li, a {
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
     padding: 2em;
-    position: sticky;
+    position: fixed;
     top: 0;
 }
 
 .nav-links {
-    justify-self: end;
-    gap: 4rem;
+    background-color: white;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgb(161, 161, 161);
+    overflow: hidden;
+    justify-self: center;
+    width: 30rem;
+    height: 0;
+    gap: 2rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.nav-links li {
+    margin: 1em 0;
+    width: 100%;
+    text-align: center;
 }
 
 .nav-links hr {
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 100%;
+    margin: 0 0.5em;
+    width: 100%;
+    height: 0.2rem;
     background-color: var(--c-grayish-blue);
-    border-color: var(--c-grayish-blue);
+    border: 0;
 }
 
 .login {
     color: var(--c-grayish-blue);
 }
 
+.hamburger {
+    justify-self: end;
+    align-self: center;
+    cursor: pointer;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
 @media (min-width: 50em){
     .navbar {
         padding: 3em 6em;
+        grid-template-rows: unset;
+        position: unset;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-self: end;
+        grid-row: unset;
+        grid-column: unset;
+        background-color: unset;
+        width: unset;
+        height: unset;
+        box-shadow: unset;
+        gap: 4rem;
+    }
+
+    .nav-links li {
+        width: fit-content;
+    }
+
+    .nav-links hr {
+        height: 0.5rem;
+        width: 0.5rem;
+        border-radius: 100%;
+        border-color: var(--c-grayish-blue);
     }
 
     .hamburger {
@@ -110,10 +158,15 @@ li, a {
 /*End of Navigation Bar section*/
 
 /*Main Content*/
+.main {
+    width: 100%;
+    margin-top: 6em;
+}
 
 .text-content {
     gap: 2rem;
     color: var(--c-grayish-blue);
+    padding: 3em;
 }
 
 .headings {
@@ -151,13 +204,35 @@ li, a {
     border-radius: 0.5rem;
     padding: 0.7em 2em;
     margin-right: 3rem;
+    cursor: pointer;
+}
+
+.demo-btn:hover {
+    opacity: 0.9;
+    transition: 0.3s ease-in-out;
+}
+
+.main-photo {
+    width: 100%;
 }
 
 @media (min-width: 50em) {
     .main {
         overflow: hidden;
-        width: 100%;
         grid-template-columns: repeat(2, 50%);
         padding: 0 6em;
+        margin-top: unset;
+    }
+
+    .text-content {
+        padding: unset;
+    }
+
+    .main-photo {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: unset;
     }
 }
