@@ -6,10 +6,19 @@
 
 :root {
     /*Font Families*/
+    --ff-overpass: 'Overpass';
 
     /*Font Weights*/
+    --fw-400: 400;
+    --fw-700: 700;
 
     /*Colors*/
+    --c-orange: hsl(25, 97%, 53%);
+    --c-white: hsl(0, 0%, 100%);
+    --c-light-gray: hsl(217, 12%, 63%);
+    --c-medium-gray: hsl(216, 12%, 54%);
+    --c-dark-blue: hsl(213, 19%, 18%);
+    --c-very-dark-blue: hsl(216, 12%, 8%);
 }
 
 html {
@@ -19,12 +28,20 @@ html {
 
 body {
     font-size: 1.4rem;
+    font-family: var(--ff-overpass), sans-serif;
+    background-color: var(--c-very-dark-blue);
+    min-height: 100vh;
 }
 
 li, a {
     color: var(--c-white);
     text-decoration: none;
     list-style: none;
+}
+
+p {
+    line-height: 1.5;
+    color: var(--c-light-gray);
 }
 
 /* Start of Utility Classes*/
@@ -57,3 +74,94 @@ li, a {
     align-items: center;
 }
 /*End of Utility Classes*/
+
+.initial-state, .thank-you{
+    background-color: var(--c-dark-blue);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    width: 40rem;
+    font-size: 1.6rem;
+}
+
+.initial-state img {
+    background-color: hsl(213, 19%, 22%);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.initial-state h1 {
+    color: var(--c-white);
+    margin: 3rem 0 1rem;
+}
+
+.initial-state ul {
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: none;
+    background-color: hsl(213, 19%, 22%);
+    padding-top: 0.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    color: var(--c-white);
+    font-weight: var(--fw-700);
+}
+
+.btn:hover {
+    background-color: var(--c-orange);
+}
+
+.btn:focus {
+    background-color: var(--c-medium-gray);
+}
+
+.btn-submit {
+    color: var(--c-white);
+    font-weight: var(--fw-700);
+    width: 100%;
+    background-color: var(--c-orange);
+    border: none;
+    border-radius: 3rem;
+    padding: 1rem 0 0.7rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: var(--c-white);
+    color: var(--c-orange);
+}
+
+.thank-you {
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.thank-you h2 {
+    color: var(--c-white);
+}
+
+.thank-you img {
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+.rating {
+    background-color: hsl(213, 19%, 22%);
+    color: var(--c-orange);
+    border-radius: 3rem;
+    padding: 0.4rem 1.3rem 0rem;
+}
+
+.hidden {
+    display: none;
+}
